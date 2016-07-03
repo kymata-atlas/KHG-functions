@@ -1,4 +1,4 @@
-function [flutter_range_vertical_displacement_value] = flutter_range_vertical_displacement([xhisory], x)
+function [flutter_range_vertical_displacement_value] = flutter_range_vertical_displacement(xhistory, x)
 
     % This function is a niave implementation of the flutter range vertical
     % displacement function.
@@ -19,7 +19,7 @@ function [flutter_range_vertical_displacement_value] = flutter_range_vertical_di
     % -----
     % Main Parameters
     
-    % Meissnerï¿½s corpuscles are most sensitive between 10 and 70 Hz, while
+    % Meissner’s corpuscles are most sensitive between 10 and 70 Hz, while
     % Merkel cells are most sensitive between 5 to 15 Hz, although the
     % frequency selectivity for all mechanoreceptors overlap (Iggo, 1985).
     % Here, we set the cutt-off as 70 Hz.

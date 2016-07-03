@@ -1,4 +1,4 @@
-function [vibration_detection_value] = vibration_detection(x)
+function [vibration_detection_value] = vibration_detection(xhistory, x)
 
     % This function is a niave implementation of the flutter range
     % vibration detection function.
@@ -38,7 +38,7 @@ function [vibration_detection_value] = vibration_detection(x)
     grpdelay(df,2048,Fs);   % plot group delay
     D = mean(grpdelay(df)); % filter delay in samples
     
-    y = filter(df,[x; zeros(D,1)]); % Append D zeros to the input data
+    y = filter(df,[concat(x, xhistory); zeros(D,1)]); % Append D zeros to the input data
     y = y(D+1:end);                  % Shift data to compensate for delay
     
     % Run a fast fourier transform to work out if there is any high
