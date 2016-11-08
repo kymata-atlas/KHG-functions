@@ -5,7 +5,7 @@ function [flutter_range_vertical_displacement_value] = flutter_range_vertical_di
     
     % -------
     % Authors: Thwaites (2016)
-    % Kymata Hypothisis group
+    % Kymata Hypothesis group
 
     % Input stream: The momentary vertical displacement (mm) on a region of
     % the skin ('x') and the previous n inputs in the array xhisory.
@@ -19,7 +19,7 @@ function [flutter_range_vertical_displacement_value] = flutter_range_vertical_di
     % -----
     % Main Parameters
     
-    % Meissner’s corpuscles are most sensitive between 10 and 70 Hz, while
+    % Meissnerâ€™s corpuscles are most sensitive between 10 and 70 Hz, while
     % Merkel cells are most sensitive between 5 to 15 Hz, although the
     % frequency selectivity for all mechanoreceptors overlap (Iggo, 1985).
     % Here, we set the cutt-off as 70 Hz.
